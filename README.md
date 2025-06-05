@@ -1,19 +1,15 @@
-# Fabio Palumbo
-
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=42+Nice+Student;Full+Stack+Developer;Always+learning+new+things" alt="Typing SVG" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,2,2,5,30&height=200&section=header&text=Fabio%20Palumbo&fontSize=90&fontAlignY=35&desc=Full%20Stack%20Developer%20|%2042%20Student%20|%20Nice,%20France&descAlignY=60&descSize=18&animation=twinkling" alt="Header" />
 </div>
 
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Fpalumbo42&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
-</div>
-
-## About Me
 
 Full Stack Developer and 42 student based in Nice, France. Passionate about building efficient solutions and continuously expanding my technical expertise.
 
 ## GitHub Analytics
 
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Fpalumbo42&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+</div>
 <div align="center">
   <a href="https://github.com/Fpalumbo42">
     <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Fpalumbo42&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
@@ -31,7 +27,7 @@ Full Stack Developer and 42 student based in Nice, France. Passionate about buil
   <img src="https://github-profile-trophy.vercel.app/?username=Fpalumbo42&theme=tokyonight&no-frame=false&row=1&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
 </div>
 
-## Technical Stack
+## Technical Stack & 42
 
 <div align="center">
 
@@ -57,41 +53,27 @@ Full Stack Developer and 42 student based in Nice, France. Passionate about buil
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-</div>
-
-## 42 School Journey
+### 42 Cursus
 
 <div align="center">
-  <img src="https://badge42.vercel.app/api/v2/cl1kow5fz001509l61uasg8ze/stats?cursusId=21&coalitionId=322" alt="fpalumbo's 42 stats" />
+  
+  [![42 Profile](https://img.shields.io/badge/42_Profile-000000?style=for-the-badge&logo=42&logoColor=white)](https://profile.intra.42.fr/users/fpalumbo)
+  ![42 Level](https://img.shields.io/badge/Level-11.02-00babc?style=for-the-badge&logo=42&logoColor=white)
+  
+</div>
 </div>
 
-## Contribution Metrics
+
+
+## Dynamic Snake Animation
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Fpalumbo42&bg_color=1a1b27&color=70a5fd&line=70a5fd&point=70a5fd&area=true&hide_border=true" alt="Activity Graph" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Fpalumbo42/Fpalumbo42/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Fpalumbo42/Fpalumbo42/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Fpalumbo42/Fpalumbo42/output/github-contribution-grid-snake.svg">
+  </picture>
 </div>
-
-## 3D Contribution Calendar
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Fpalumbo42&theme=tokyonight" alt="Profile Details" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Fpalumbo42&theme=tokyonight" alt="Productive Time" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Fpalumbo42&theme=tokyonight" alt="Stats" />
-</div>
-
-## Coding Activity
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
-
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
-</div>
-
----
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=20&fontAlignY=70&desc=Let's%20connect%20and%20build%20something%20amazing&descAlignY=85&descSize=12" alt="Footer" />
