@@ -72,7 +72,7 @@ Full Stack Developer and 42 student based in Nice, France. Passionate about buil
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Fpalumbo42/Fpalumbo42/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Fpalumbo42/Fpalumbo42/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Fpalumbo42/Fpalumbo42/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Fpalumbo42/Fpalumbo42/output/snake.svg">
   </picture>
 </div>
 
