@@ -62,7 +62,7 @@
 
 <div align="center">
   
-![Snake animation](https://github.com/Fpalumbo42/Fpalumbo42/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/Fpalumbo42/Fpalumbo42/blob/output/snake.svg)
 
 </div>
 
