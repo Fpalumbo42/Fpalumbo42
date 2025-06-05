@@ -22,7 +22,6 @@ Full Stack Developer and 42 student based in Nice, France. Passionate about buil
   <img width="39%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fpalumbo42&layout=compact&langs_count=8&theme=tokyonight&card_height=195"/>
 </div>
 
-## Trophy Showcase
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Fpalumbo42&theme=tokyonight&no-frame=false&row=1&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
@@ -64,9 +63,6 @@ Full Stack Developer and 42 student based in Nice, France. Passionate about buil
 </div>
 </div>
 
-
-
-## Dynamic Snake Animation
 
 <div align="center">
   <picture>
