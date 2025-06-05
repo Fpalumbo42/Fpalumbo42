@@ -5,20 +5,21 @@
 
 Full Stack Developer and 42 student based in Nice, France. Passionate about building efficient solutions and continuously expanding my technical expertise.
 
-## GitHub Analytics
-
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Fpalumbo42&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
 </div>
+
+## GitHub Analytics
+
+
+
 <div align="center">
-  <a href="https://github.com/Fpalumbo42">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Fpalumbo42&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fpalumbo42&layout=compact&langs_count=8&theme=tokyonight"/>
-  </a>
+  <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=Fpalumbo42&theme=tokyonight&hide_border=false&stroke=0000&background=1a1b27&ring=70a5fd&fire=70a5fd&currStreakLabel=70a5fd" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img width="90%" src="https://github-readme-streak-stats.herokuapp.com/?user=Fpalumbo42&theme=tokyonight&hide_border=false&stroke=0000&background=1a1b27&ring=70a5fd&fire=70a5fd&currStreakLabel=70a5fd" alt="GitHub Streak" />
+  <img width="59.5%" src="https://github-readme-stats.vercel.app/api?username=Fpalumbo42&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&card_height=195"/>
+  <img width="39%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fpalumbo42&layout=compact&langs_count=8&theme=tokyonight&card_height=195"/>
 </div>
 
 ## Trophy Showcase
