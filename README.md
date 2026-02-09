@@ -65,7 +65,7 @@ Full Stack Developer and 42 student based in Nice, France. Passionate about buil
 
 ### 42 Cursus
 [![42 Profile](https://img.shields.io/badge/42_Profile-000000?style=for-the-badge&logo=42&logoColor=white)](https://profile.intra.42.fr/users/fpalumbo)
-![42 Level](https://img.shields.io/badge/Level-13.76-00babc?style=for-the-badge&logo=42&logoColor=white)
+![42 Level](https://img.shields.io/badge/Level-15.32-00babc?style=for-the-badge&logo=42&logoColor=white)
 
 </div>
 
