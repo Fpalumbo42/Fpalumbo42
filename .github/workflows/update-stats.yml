@@ -19,26 +19,18 @@ jobs:
       - name: Generate stats.svg
         uses: readme-tools/github-readme-stats-action@v1
         with:
-          username: Fpalumbo42
-          theme: tokyonight
-          show_icons: true
-          include_all_commits: true
-          count_private: true
-          output: profile/stats.svg
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          card: stats
+          options: username=Fpalumbo42&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight
+          path: profile/stats.svg
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Generate top-langs.svg
         uses: readme-tools/github-readme-stats-action@v1
         with:
-          username: Fpalumbo42
-          theme: tokyonight
-          card_type: top-langs
-          layout: compact
-          langs_count: 8
-          output: profile/top-langs.svg
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          card: top-langs
+          options: username=Fpalumbo42&layout=compact&langs_count=8&theme=tokyonight
+          path: profile/top-langs.svg
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Generate streak.svg
         run: |
