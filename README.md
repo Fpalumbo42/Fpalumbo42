@@ -14,12 +14,12 @@ Full Stack Developer and 42 student based in Nice, France. Passionate about buil
 
 
 <div align="center">
-  <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=Fpalumbo42&theme=tokyonight&hide_border=false&stroke=0000&background=1a1b27&ring=70a5fd&fire=70a5fd&currStreakLabel=70a5fd" alt="GitHub Streak" />
+  <img width="100%" src="./profile/streak.svg" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img width="59.5%" src="https://github-readme-stats.vercel.app/api?username=Fpalumbo42&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&card_height=195"/>
-  <img width="39%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fpalumbo42&layout=compact&langs_count=8&theme=tokyonight&card_height=195"/>
+  <img width="59.5%" src="./profile/stats.svg" alt="GitHub Stats" />
+  <img width="39%" src="./profile/top-langs.svg" alt="Top Languages" />
 </div>
 
 
