@@ -1,9 +1,12 @@
-name: Update GitHub Stats
+name: Update GitHub Profile
 
 on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   update-stats:
@@ -38,7 +41,7 @@ jobs:
           curl -s -o profile/streak.svg \
             "https://streak-stats.demolab.com/?user=Fpalumbo42&theme=tokyonight&hide_border=false&stroke=0000&background=1a1b27&ring=70a5fd&fire=70a5fd&currStreakLabel=70a5fd"
 
-      - name: Commit and push
+      - name: Commit and push stats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -46,3 +49,27 @@ jobs:
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "chore: update GitHub stats SVGs"
           git push
+
+  generate-snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Push snake SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

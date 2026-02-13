@@ -1,13 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,2,2,5,30&height=200&section=header&text=Fabio%20Palumbo&fontSize=90&fontAlignY=35&desc=Full%20Stack%20Developer%20|%2042%20Student%20|%20Nice,%20France&descAlignY=60&descSize=18&animation=twinkling" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,2,2,5,30&height=200&section=header&text=Fabio%20Palumbo&fontSize=90&fontAlignY=35&desc=Software%20Engineer%20|%2042%20Student%20|%20Nice,%20France&descAlignY=60&descSize=18&animation=twinkling" alt="Header" />
 </div>
 
 
-Full Stack Developer and 42 student based in Nice, France. Passionate about building efficient solutions and continuously expanding my technical expertise.
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Fpalumbo42&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
-</div>
+Software engineer and 42 student based in Nice, France. Passionate about building efficient solutions and continuously expanding my technical expertise.
 
 ## GitHub Analytics
 
@@ -20,11 +16,6 @@ Full Stack Developer and 42 student based in Nice, France. Passionate about buil
 <div align="center">
   <img width="59.5%" src="./profile/stats.svg" alt="GitHub Stats" />
   <img width="39%" src="./profile/top-langs.svg" alt="Top Languages" />
-</div>
-
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Fpalumbo42&theme=tokyonight&no-frame=false&row=1&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
 </div>
 
 ## Technical Stack & 42
@@ -60,12 +51,12 @@ Full Stack Developer and 42 student based in Nice, France. Passionate about buil
 ![Gcloud](https://img.shields.io/badge/Gcloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
 
 ### 42 Cursus
 [![42 Profile](https://img.shields.io/badge/42_Profile-000000?style=for-the-badge&logo=42&logoColor=white)](https://profile.intra.42.fr/users/fpalumbo)
-![42 Level](https://img.shields.io/badge/Level-15.32-00babc?style=for-the-badge&logo=42&logoColor=white)
+![42 Level](https://img.shields.io/badge/Level-15.77-00babc?style=for-the-badge&logo=42&logoColor=white)
 
 </div>
 
