@@ -9,7 +9,7 @@
   <text x="30" y="30" class="mono" fill="#c0caf5" font-size="16" font-weight="600"><tspan fill="#7aa2f7" class="bold">❯</tspan><tspan fill="#bb9af7" xml:space="preserve"> ~/ </tspan><tspan>echo $THEME</tspan></text>
   <text x="30" y="55" class="mono" fill="#7dcfff" font-size="16">Tokyo Night</text>
   <text x="30" y="90" class="mono" fill="#c0caf5" font-size="16" font-weight="600"><tspan fill="#7aa2f7" class="bold">❯</tspan><tspan fill="#bb9af7" xml:space="preserve"> ~/ </tspan><tspan>stat -c '%y' README.md</tspan></text>
-  <text x="30" y="115" class="mono" fill="#7dcfff" font-size="14">07 Mar 2026 - 22:44:21 (Paris)</text>
+  <text x="30" y="115" class="mono" fill="#7dcfff" font-size="14">07 Mar 2026 - 22:51:45 (Paris)</text>
   <text x="30" y="150" class="mono" fill="#c0caf5" font-size="16" font-weight="600"><tspan fill="#7aa2f7" class="bold">❯</tspan><tspan fill="#bb9af7" xml:space="preserve"> ~/ </tspan><tspan>exit </tspan><tspan fill="#565f89"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />█</tspan></text>
   <path d="M 0.5 0 L 0.5 172 Q 0.5 179.5 8 179.5 L 892 179.5 Q 899.5 179.5 899.5 172 L 899.5 0" fill="none" stroke="#565f89" stroke-opacity="0.3" stroke-width="1" />
 </svg>
