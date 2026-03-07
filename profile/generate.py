@@ -73,7 +73,7 @@ outputs = {
         f"&bg_color={p['BG']}&icon_color={p['A2']}&hide_border=true&border_radius=0"
     ),
     "langs_options": (
-        f"username={USERNAME}&layout=compact&langs_count=8"
+        f"username={USERNAME}"
         f"&title_color={p['A1']}&text_color={p['TEXT']}"
         f"&bg_color={p['BG']}&hide_border=true&border_radius=0"
     ),
