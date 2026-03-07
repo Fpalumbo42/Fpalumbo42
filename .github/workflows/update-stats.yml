@@ -1,0 +1,94 @@
+name: Update GitHub Profile
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate profile
+        id: palette
+        run: python3 profile/generate.py
+
+      - name: Generate stats.svg
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: ${{ steps.palette.outputs.stats_options }}
+          path: profile/stats.svg
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Generate top-langs.svg
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: ${{ steps.palette.outputs.langs_options }}
+          path: profile/top-langs.svg
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Generate streak.svg
+        run: |
+          for i in 1 2 3 4 5; do
+            curl -sL "https://streak-stats.demolab.com/?${{ steps.palette.outputs.streak_options }}" > profile/streak.svg
+            if grep -q '<svg' profile/streak.svg 2>/dev/null; then break; fi
+            echo "Retry $i for streak.svg..." && sleep 10
+          done
+
+      - name: Generate Snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.PAT_TOKEN }}
+          outputs: |
+            dist/snake.svg?color_snake=%23${{ steps.palette.outputs.text }}&color_dots=%23${{ steps.palette.outputs.snk_l0 }},%23${{ steps.palette.outputs.snk_l1 }},%23${{ steps.palette.outputs.snk_l2 }},%23${{ steps.palette.outputs.snk_l3 }},%23${{ steps.palette.outputs.snk_l4 }}
+            dist/github-contribution-grid-snake.svg?color_snake=%23${{ steps.palette.outputs.text }}&color_dots=%23${{ steps.palette.outputs.snk_l0 }},%23${{ steps.palette.outputs.snk_l1 }},%23${{ steps.palette.outputs.snk_l2 }},%23${{ steps.palette.outputs.snk_l3 }},%23${{ steps.palette.outputs.snk_l4 }}
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23${{ steps.palette.outputs.text }}&color_dots=%23${{ steps.palette.outputs.snk_d0 }},%23${{ steps.palette.outputs.snk_d1 }},%23${{ steps.palette.outputs.snk_d2 }},%23${{ steps.palette.outputs.snk_d3 }},%23${{ steps.palette.outputs.snk_d4 }}
+
+      - name: Add background to snake SVGs
+        run: |
+          python3 -c "
+          import glob, re, sys
+          bg = sys.argv[1]
+          for f in glob.glob('dist/*.svg'):
+              with open(f) as fh:
+                  content = fh.read()
+              # Parse viewBox to cover full area (handles negative coords)
+              m = re.search(r'viewBox=\"([^\"]+)\"', content)
+              if m:
+                  parts = m.group(1).split()
+                  rect = '<rect x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\" fill=\"#{}\"/>'.format(parts[0], parts[1], parts[2], parts[3], bg)
+              else:
+                  rect = '<rect width=\"100%\" height=\"100%\" fill=\"#{}\"/>'.format(bg)
+              content = re.sub(r'(<svg[^>]*>)', r'\1' + rect, content, count=1)
+              with open(f, 'w') as fh:
+                  fh.write(content)
+          " "${{ steps.palette.outputs.bg }}"
+
+      - name: Push snake SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile/header.svg profile/skills_snake.svg profile/footer.svg profile/stats.svg profile/top-langs.svg profile/streak.svg README.md
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "chore: update profile [${{ steps.palette.outputs.palette_name }}] $(TZ='Europe/Paris' date '+%Y-%m-%d %H:%M') Paris"
+          git push
