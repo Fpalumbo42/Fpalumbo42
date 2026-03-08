@@ -69,11 +69,13 @@ outputs = {
     **{f"snk_l{i}": p[f"SNK_L{i}"] for i in range(5)},
     "stats_options": (
         f"username={USERNAME}&show_icons=true&include_all_commits=true&count_private=true"
+        f"&show=reviews,prs_merged"
         f"&title_color={p['A1']}&text_color={p['TEXT']}"
         f"&bg_color={p['BG']}&icon_color={p['A2']}&hide_border=true&border_radius=0"
     ),
     "langs_options": (
         f"username={USERNAME}&layout=compact&langs_count=8"
+        f"&hide=html,css"
         f"&title_color={p['A1']}&text_color={p['TEXT']}"
         f"&bg_color={p['BG']}&hide_border=true&border_radius=0"
     ),
@@ -81,6 +83,7 @@ outputs = {
         f"user={USERNAME}&hide_border=true&background={p['BG']}&ring={p['A1']}&fire={p['A1']}"
         f"&currStreakLabel={p['A1']}&currStreakNum={p['TEXT']}&sideNums={p['TEXT']}"
         f"&sideLabels={p['TEXT']}&dates={p['MUTED']}&border_radius=0"
+        f"&date_format=d/m/Y"
     ),
     "palette_name": p["name"],
 }
