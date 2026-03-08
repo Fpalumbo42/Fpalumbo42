@@ -9,28 +9,31 @@ from zoneinfo import ZoneInfo
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.join(SCRIPT_DIR, "..")
+CONFIG_DIR = os.path.join(SCRIPT_DIR, "config")
 TEMPLATES_DIR = os.path.join(SCRIPT_DIR, "templates")
-USERNAME = "Fpalumbo42"
 
 
-with open(os.path.join(SCRIPT_DIR, "palettes.json")) as f:
-    palettes = json.load(f)["palettes"]
+def load_config():
+    with open(os.path.join(CONFIG_DIR, "config.json")) as f:
+        return json.load(f)
 
-name = os.environ.get("PALETTE_NAME")
-palette = next((p for p in palettes if p["name"] == name), None) if name else None
-if not palette:
+
+def load_palettes():
+    with open(os.path.join(CONFIG_DIR, "palettes.json")) as f:
+        return json.load(f)["palettes"]
+
+
+def pick_palette(palettes):
+    name = os.environ.get("PALETTE_NAME")
     if name:
+        match = next((p for p in palettes if p["name"] == name), None)
+        if match:
+            return match
         print(f"Warning: palette '{name}' not found, using random.", file=sys.stderr)
-    palette = random.choice(palettes)
-
-palette["CACHE"] = str(int(time.time()))
-palette["DATE"] = datetime.now(ZoneInfo("Europe/Paris")).strftime("%d %b %Y - %H:%M:%S (Paris)")
-print(f"palette: {palette['name']}", file=sys.stderr, flush=True)
-
-# --- Render templates ---
+    return random.choice(palettes)
 
 
-def render(src: str, dst: str) -> None:
+def render_template(src, dst, palette):
     with open(src) as f:
         content = f.read()
     for key, value in palette.items():
@@ -40,54 +43,90 @@ def render(src: str, dst: str) -> None:
     print(f"  -> {os.path.relpath(dst, REPO_ROOT)}", file=sys.stderr)
 
 
-TEMPLATES = {
-    "header.template.svg": "header.svg",
-    "skills_snake.template.svg": "skills_snake.svg",
-    "footer.template.svg": "footer.svg",
-    "README.template.md": os.path.join("..", "README.md"),
-}
+def render_all_templates(config, palette):
+    for src_name, dst_name in config["templates"].items():
+        render_template(
+            os.path.join(TEMPLATES_DIR, src_name),
+            os.path.join(SCRIPT_DIR, dst_name),
+            palette,
+        )
 
-for src_name, dst_name in TEMPLATES.items():
-    render(
-        os.path.join(TEMPLATES_DIR, src_name),
-        os.path.join(SCRIPT_DIR, dst_name),
+
+def build_stats_options(config, palette):
+    stats = config["stats"]
+    return (
+        f"username={config['username']}"
+        f"&show_icons={str(stats['show_icons']).lower()}"
+        f"&include_all_commits={str(stats['include_all_commits']).lower()}"
+        f"&count_private={str(stats['count_private']).lower()}"
+        f"&title_color={palette['A1']}&text_color={palette['TEXT']}"
+        f"&bg_color={palette['BG']}&icon_color={palette['A2']}"
+        f"&hide_border=true&border_radius=0"
     )
 
 
-output_file = os.environ.get("GITHUB_OUTPUT")
-if not output_file:
-    sys.exit(0)
+def build_langs_options(config, palette):
+    langs = config["langs"]
+    return (
+        f"username={config['username']}"
+        f"&layout={langs['layout']}&langs_count={langs['langs_count']}"
+        f"&hide={','.join(langs['hide'])}"
+        f"&title_color={palette['A1']}&text_color={palette['TEXT']}"
+        f"&bg_color={palette['BG']}&hide_border=true&border_radius=0"
+    )
 
-p = palette
-outputs = {
-    "bg": p["BG"],
-    "a1": p["A1"],
-    "a2": p["A2"],
-    "a3": p["A3"],
-    "text": p["TEXT"],
-    **{f"snk_d{i}": p[f"SNK_D{i}"] for i in range(5)},
-    **{f"snk_l{i}": p[f"SNK_L{i}"] for i in range(5)},
-    "stats_options": (
-        f"username={USERNAME}&show_icons=true&include_all_commits=true&count_private=true"
-        f"&show=reviews,prs_merged"
-        f"&title_color={p['A1']}&text_color={p['TEXT']}"
-        f"&bg_color={p['BG']}&icon_color={p['A2']}&hide_border=true&border_radius=0"
-    ),
-    "langs_options": (
-        f"username={USERNAME}&layout=compact&langs_count=8"
-        f"&hide=html,css"
-        f"&title_color={p['A1']}&text_color={p['TEXT']}"
-        f"&bg_color={p['BG']}&hide_border=true&border_radius=0"
-    ),
-    "streak_options": (
-        f"user={USERNAME}&hide_border=true&background={p['BG']}&ring={p['A1']}&fire={p['A1']}"
-        f"&currStreakLabel={p['A1']}&currStreakNum={p['TEXT']}&sideNums={p['TEXT']}"
-        f"&sideLabels={p['TEXT']}&dates={p['MUTED']}&border_radius=0"
-        f"&date_format=d/m/Y"
-    ),
-    "palette_name": p["name"],
-}
 
-with open(output_file, "a") as f:
-    for key, value in outputs.items():
-        f.write(f"{key}={value}\n")
+def build_streak_options(config, palette):
+    streak = config["streak"]
+    return (
+        f"user={config['username']}"
+        f"&hide_border=true&background={palette['BG']}"
+        f"&ring={palette['A1']}&fire={palette['A1']}"
+        f"&currStreakLabel={palette['A1']}&currStreakNum={palette['TEXT']}"
+        f"&sideNums={palette['TEXT']}&sideLabels={palette['TEXT']}"
+        f"&dates={palette['MUTED']}&border_radius=0"
+        f"&date_format={streak['date_format']}"
+    )
+
+
+def write_github_outputs(config, palette):
+    output_file = os.environ.get("GITHUB_OUTPUT")
+    if not output_file:
+        return
+
+    outputs = {
+        "bg": palette["BG"],
+        "a1": palette["A1"],
+        "a2": palette["A2"],
+        "a3": palette["A3"],
+        "text": palette["TEXT"],
+        **{f"snk_d{i}": palette[f"SNK_D{i}"] for i in range(5)},
+        **{f"snk_l{i}": palette[f"SNK_L{i}"] for i in range(5)},
+        "stats_options": build_stats_options(config, palette),
+        "langs_options": build_langs_options(config, palette),
+        "streak_options": build_streak_options(config, palette),
+        "palette_name": palette["name"],
+    }
+
+    with open(output_file, "a") as f:
+        for key, value in outputs.items():
+            f.write(f"{key}={value}\n")
+
+
+def main():
+    config = load_config()
+    palette = pick_palette(load_palettes())
+
+    city = config["timezone"].split("/")[-1].replace("_", " ")
+    palette["CACHE"] = str(int(time.time()))
+    palette["DATE"] = datetime.now(ZoneInfo(config["timezone"])).strftime(
+        f"%d %b %Y - %H:%M:%S ({city})"
+    )
+    print(f"palette: {palette['name']}", file=sys.stderr, flush=True)
+
+    render_all_templates(config, palette)
+    write_github_outputs(config, palette)
+
+
+if __name__ == "__main__":
+    main()

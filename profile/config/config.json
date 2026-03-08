@@ -1,0 +1,23 @@
+{
+  "username": "Fpalumbo42",
+  "timezone": "Europe/Paris",
+  "templates": {
+    "header.template.svg": "generated/header.svg",
+    "skills_snake.template.svg": "generated/skills_snake.svg",
+    "footer.template.svg": "generated/footer.svg",
+    "README.template.md": "../README.md"
+  },
+  "stats": {
+    "show_icons": true,
+    "include_all_commits": true,
+    "count_private": true
+  },
+  "langs": {
+    "layout": "compact",
+    "langs_count": 8,
+    "hide": ["html", "css"]
+  },
+  "streak": {
+    "date_format": "d/m/Y"
+  }
+}
