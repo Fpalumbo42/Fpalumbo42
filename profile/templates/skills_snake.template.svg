@@ -1,11 +1,11 @@
-<svg viewBox="0 0 900 438" xmlns="http://www.w3.org/2000/svg" width="900" height="438">
+<svg viewBox="0 0 900 468" xmlns="http://www.w3.org/2000/svg" width="900" height="468">
   <defs>
     <style>
       .mono { font-family: "JetBrains Mono", "Fira Code", "Menlo", "Consolas", monospace; }
       .bold { font-weight: 700; }
     </style>
   </defs>
-  <rect width="900" height="438" fill="#{{BG}}" />
+  <rect width="900" height="468" fill="#{{BG}}" />
   <text x="30" y="28" class="mono" fill="#{{TEXT}}" font-size="16" font-weight="600"><tspan fill="#{{A1}}" class="bold">❯</tspan><tspan fill="#{{A2}}" xml:space="preserve"> ~/ </tspan><tspan>vim skills.json</tspan></text>
   <text x="52" y="58" class="mono" fill="#{{MUTED}}" font-size="14" text-anchor="end">1</text>
   <text x="60" y="58" class="mono" font-size="14"><tspan fill="#{{MUTED}}">{</tspan></text>
@@ -36,5 +36,5 @@
   <text x="30" y="397" class="mono" fill="#{{TEXT}}" font-size="16" font-weight="600"><tspan fill="#{{A1}}" class="bold">❯</tspan><tspan fill="#{{A2}}" xml:space="preserve"> ~/ </tspan><tspan>gcc -Wall -Wextra -Werror snake.c</tspan></text>
 
   <text x="30" y="432" class="mono" fill="#{{TEXT}}" font-size="16" font-weight="600"><tspan fill="#{{A1}}" class="bold">❯</tspan><tspan fill="#{{A2}}" xml:space="preserve"> ~/ </tspan><tspan>./a.out</tspan></text>
-  <path d="M 0.5 0 L 0.5 438 M 899.5 0 L 899.5 438" fill="none" stroke="#{{MUTED}}" stroke-opacity="0.3" stroke-width="1" />
+  <path d="M 0.5 0 L 0.5 468 M 899.5 0 L 899.5 468" fill="none" stroke="#{{MUTED}}" stroke-opacity="0.3" stroke-width="1" />
 </svg>
