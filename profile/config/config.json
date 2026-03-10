@@ -18,6 +18,7 @@
     "hide": ["html", "css"]
   },
   "streak": {
-    "date_format": "d/m/Y"
+    "date_format": "d/m/Y",
+    "mode": "weekly"
   }
 }

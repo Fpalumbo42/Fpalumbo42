@@ -86,6 +86,7 @@ def build_streak_options(config, palette):
         f"&sideNums={palette['TEXT']}&sideLabels={palette['TEXT']}"
         f"&dates={palette['MUTED']}&border_radius=0"
         f"&date_format={streak['date_format']}"
+        f"&mode={streak['mode']}"
     )
 
 
