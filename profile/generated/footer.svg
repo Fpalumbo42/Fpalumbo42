@@ -5,11 +5,11 @@
       .bold { font-weight: 700; }
     </style>
   </defs>
-  <path d="M 0 0 L 900 0 L 900 172 Q 900 180 892 180 L 8 180 Q 0 180 0 172 L 0 0 Z" fill="#faf4ed" />
-  <text x="30" y="30" class="mono" fill="#575279" font-size="16" font-weight="600"><tspan fill="#b4637a" class="bold">❯</tspan><tspan fill="#ea9d34" xml:space="preserve"> ~/ </tspan><tspan>echo $THEME</tspan></text>
-  <text x="30" y="55" class="mono" fill="#56949f" font-size="16">Rose Pine Dawn</text>
-  <text x="30" y="90" class="mono" fill="#575279" font-size="16" font-weight="600"><tspan fill="#b4637a" class="bold">❯</tspan><tspan fill="#ea9d34" xml:space="preserve"> ~/ </tspan><tspan>stat -c '%y' README.md</tspan></text>
-  <text x="30" y="115" class="mono" fill="#56949f" font-size="14">21 Mar 2026 - 07:33:18 (Paris)</text>
-  <text x="30" y="150" class="mono" fill="#575279" font-size="16" font-weight="600"><tspan fill="#b4637a" class="bold">❯</tspan><tspan fill="#ea9d34" xml:space="preserve"> ~/ </tspan><tspan>exit </tspan><tspan fill="#9893a5"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />█</tspan></text>
-  <path d="M 0.5 0 L 0.5 172 Q 0.5 179.5 8 179.5 L 892 179.5 Q 899.5 179.5 899.5 172 L 899.5 0" fill="none" stroke="#9893a5" stroke-opacity="0.3" stroke-width="1" />
+  <path d="M 0 0 L 900 0 L 900 172 Q 900 180 892 180 L 8 180 Q 0 180 0 172 L 0 0 Z" fill="#d5f5e3" />
+  <text x="30" y="30" class="mono" fill="#2d3436" font-size="16" font-weight="600"><tspan fill="#e84393" class="bold">❯</tspan><tspan fill="#6c5ce7" xml:space="preserve"> ~/ </tspan><tspan>echo $THEME</tspan></text>
+  <text x="30" y="55" class="mono" fill="#fdcb6e" font-size="16">Candy Shop</text>
+  <text x="30" y="90" class="mono" fill="#2d3436" font-size="16" font-weight="600"><tspan fill="#e84393" class="bold">❯</tspan><tspan fill="#6c5ce7" xml:space="preserve"> ~/ </tspan><tspan>stat -c '%y' README.md</tspan></text>
+  <text x="30" y="115" class="mono" fill="#fdcb6e" font-size="14">21 Mar 2026 - 13:31:04 (Paris)</text>
+  <text x="30" y="150" class="mono" fill="#2d3436" font-size="16" font-weight="600"><tspan fill="#e84393" class="bold">❯</tspan><tspan fill="#6c5ce7" xml:space="preserve"> ~/ </tspan><tspan>exit </tspan><tspan fill="#7f9a8e"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />█</tspan></text>
+  <path d="M 0.5 0 L 0.5 172 Q 0.5 179.5 8 179.5 L 892 179.5 Q 899.5 179.5 899.5 172 L 899.5 0" fill="none" stroke="#7f9a8e" stroke-opacity="0.3" stroke-width="1" />
 </svg>
