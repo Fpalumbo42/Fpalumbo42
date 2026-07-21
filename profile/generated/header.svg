@@ -6,17 +6,17 @@
       .bold { font-weight: 700; }
     </style>
   </defs>
-  <path d="M 0 8 Q 0 0 8 0 L 892 0 Q 900 0 900 8 L 900 235 L 0 235 Z" fill="#fdf2f6" />
-  <path d="M 0 8 Q 0 0 8 0 L 892 0 Q 900 0 900 8 L 900 36 L 0 36 Z" fill="#f5dce5" opacity="0.8" />
-  <line x1="0" y1="36" x2="900" y2="36" stroke="#b09aaa" stroke-opacity="0.2" stroke-width="1" />
+  <path d="M 0 8 Q 0 0 8 0 L 892 0 Q 900 0 900 8 L 900 235 L 0 235 Z" fill="#dbeafe" />
+  <path d="M 0 8 Q 0 0 8 0 L 892 0 Q 900 0 900 8 L 900 36 L 0 36 Z" fill="#bfdbfe" opacity="0.8" />
+  <line x1="0" y1="36" x2="900" y2="36" stroke="#7b9ec0" stroke-opacity="0.2" stroke-width="1" />
   <circle cx="20" cy="18" r="6" fill="#ff5f56" />
   <circle cx="40" cy="18" r="6" fill="#ffbd2e" />
   <circle cx="60" cy="18" r="6" fill="#27c93f" />
-  <text x="450" y="19" text-anchor="middle" dominant-baseline="middle" class="mono" fill="#b09aaa" font-size="12" letter-spacing="0.5">fpalumbo42 — zsh</text>
-  <text x="30" y="70" class="mono" fill="#4a3043" font-size="16" font-weight="600"><tspan fill="#c9537a" class="bold">❯</tspan><tspan fill="#e8a0bf" xml:space="preserve"> ~/ </tspan><tspan>whoami</tspan></text>
-  <text x="30" y="105" class="sans" fill="#4a3043" font-size="26" font-weight="800" letter-spacing="-1">Fabio Palumbo</text>
-  <text x="30" y="140" class="mono" fill="#4a3043" font-size="16" font-weight="600"><tspan fill="#c9537a" class="bold">❯</tspan><tspan fill="#e8a0bf" xml:space="preserve"> ~/ </tspan><tspan>cat bio.txt</tspan></text>
-  <text x="30" y="170" class="sans" font-size="18" font-weight="600"><tspan fill="#c9537a">42 Student</tspan><tspan fill="#b09aaa"> | </tspan><tspan fill="#e8a0bf">UncovAI</tspan><tspan fill="#b09aaa"> | </tspan><tspan fill="#7b9e6b">Software Engineer</tspan><tspan fill="#b09aaa"> | </tspan><tspan fill="#9b7eb8">Nice, France</tspan></text>
-  <text x="30" y="205" class="mono" fill="#4a3043" font-size="16" font-weight="600"><tspan fill="#c9537a" class="bold">❯</tspan><tspan fill="#e8a0bf" xml:space="preserve"> ~/ </tspan><tspan>gh stats</tspan></text>
-  <path d="M 0.5 235 L 0.5 8 Q 0.5 0.5 8 0.5 L 892 0.5 Q 899.5 0.5 899.5 8 L 899.5 235" fill="none" stroke="#b09aaa" stroke-opacity="0.3" stroke-width="1" />
+  <text x="450" y="19" text-anchor="middle" dominant-baseline="middle" class="mono" fill="#7b9ec0" font-size="12" letter-spacing="0.5">fpalumbo42 — zsh</text>
+  <text x="30" y="70" class="mono" fill="#1e3a5f" font-size="16" font-weight="600"><tspan fill="#2b6cb0" class="bold">❯</tspan><tspan fill="#e53e3e" xml:space="preserve"> ~/ </tspan><tspan>whoami</tspan></text>
+  <text x="30" y="105" class="sans" fill="#1e3a5f" font-size="26" font-weight="800" letter-spacing="-1">Fabio Palumbo</text>
+  <text x="30" y="140" class="mono" fill="#1e3a5f" font-size="16" font-weight="600"><tspan fill="#2b6cb0" class="bold">❯</tspan><tspan fill="#e53e3e" xml:space="preserve"> ~/ </tspan><tspan>cat bio.txt</tspan></text>
+  <text x="30" y="170" class="sans" font-size="18" font-weight="600"><tspan fill="#2b6cb0">42 Student</tspan><tspan fill="#7b9ec0"> | </tspan><tspan fill="#e53e3e">UncovAI</tspan><tspan fill="#7b9ec0"> | </tspan><tspan fill="#38a169">Software Engineer</tspan><tspan fill="#7b9ec0"> | </tspan><tspan fill="#d69e2e">Nice, France</tspan></text>
+  <text x="30" y="205" class="mono" fill="#1e3a5f" font-size="16" font-weight="600"><tspan fill="#2b6cb0" class="bold">❯</tspan><tspan fill="#e53e3e" xml:space="preserve"> ~/ </tspan><tspan>gh stats</tspan></text>
+  <path d="M 0.5 235 L 0.5 8 Q 0.5 0.5 8 0.5 L 892 0.5 Q 899.5 0.5 899.5 8 L 899.5 235" fill="none" stroke="#7b9ec0" stroke-opacity="0.3" stroke-width="1" />
 </svg>
