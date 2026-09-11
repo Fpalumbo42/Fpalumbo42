@@ -5,36 +5,36 @@
       .bold { font-weight: 700; }
     </style>
   </defs>
-  <rect width="900" height="468" fill="#2d353b" />
-  <text x="30" y="28" class="mono" fill="#d3c6aa" font-size="16" font-weight="600"><tspan fill="#a7c080" class="bold">❯</tspan><tspan fill="#e67e80" xml:space="preserve"> ~/ </tspan><tspan>vim skills.json</tspan></text>
-  <text x="52" y="58" class="mono" fill="#859289" font-size="14" text-anchor="end">1</text>
-  <text x="60" y="58" class="mono" font-size="14"><tspan fill="#859289">{</tspan></text>
-  <text x="52" y="80" class="mono" fill="#859289" font-size="14" text-anchor="end">2</text>
-  <text x="70" y="80" class="mono" font-size="14"><tspan fill="#a7c080" font-weight="600">"Languages"</tspan><tspan fill="#859289">: [</tspan><tspan fill="#d699b6">"C", "C++", "Python", "Bash", "PHP", "JavaScript", "TypeScript"</tspan><tspan fill="#859289">],</tspan></text>
-  <text x="52" y="102" class="mono" fill="#859289" font-size="14" text-anchor="end">3</text>
-  <text x="70" y="102" class="mono" font-size="14"><tspan fill="#a7c080" font-weight="600">"Frontend"</tspan><tspan fill="#859289">: [</tspan><tspan fill="#d699b6">"React", "Next.js", "Tailwind CSS"</tspan><tspan fill="#859289">],</tspan></text>
-  <text x="52" y="124" class="mono" fill="#859289" font-size="14" text-anchor="end">4</text>
-  <text x="70" y="124" class="mono" font-size="14"><tspan fill="#a7c080" font-weight="600">"Backend"</tspan><tspan fill="#859289">: [</tspan><tspan fill="#d699b6">"Django", "FastAPI", "Node.js", "Nginx"</tspan><tspan fill="#859289">],</tspan></text>
-  <text x="52" y="146" class="mono" fill="#859289" font-size="14" text-anchor="end">5</text>
-  <text x="70" y="146" class="mono" font-size="14"><tspan fill="#a7c080" font-weight="600">"Database"</tspan><tspan fill="#859289">: [</tspan><tspan fill="#d699b6">"PostgreSQL", "MongoDB", "Redis"</tspan><tspan fill="#859289">],</tspan></text>
-  <text x="52" y="168" class="mono" fill="#859289" font-size="14" text-anchor="end">6</text>
-  <text x="70" y="168" class="mono" font-size="14"><tspan fill="#a7c080" font-weight="600">"ML"</tspan><tspan fill="#859289">: [</tspan><tspan fill="#d699b6">"PyTorch", "NumPy", "Matplotlib", "Scikit-learn", "Keras"</tspan><tspan fill="#859289">],</tspan></text>
-  <text x="52" y="190" class="mono" fill="#859289" font-size="14" text-anchor="end">7</text>
-  <text x="70" y="190" class="mono" font-size="14"><tspan fill="#a7c080" font-weight="600">"Tools"</tspan><tspan fill="#859289">: [</tspan><tspan fill="#d699b6">"Git", "Docker", "Kubernetes", "ArgoCD", "GCloud", "CI/CD", "Postman", "Figma"</tspan><tspan fill="#859289">],</tspan></text>
-  <text x="52" y="212" class="mono" fill="#859289" font-size="14" text-anchor="end">8</text>
-  <text x="60" y="212" class="mono" font-size="14"><tspan fill="#859289">}</tspan></text>
-  <text x="30" y="234" class="mono" fill="#a7c080" font-size="14">~</text>
-  <text x="30" y="256" class="mono" fill="#a7c080" font-size="14">~</text>
-  <rect x="0" y="266" width="900" height="20" fill="#3d484d" />
-  <text x="10" y="280" class="mono" fill="#d3c6aa" font-size="12">skills.json</text>
-  <text x="890" y="280" class="mono" fill="#859289" font-size="12" text-anchor="end">8L, 428B</text>
-  <text x="10" y="302" class="mono" fill="#d3c6aa" font-size="14">:wq</text>
+  <rect width="900" height="468" fill="#282828" />
+  <text x="30" y="28" class="mono" fill="#ebdbb2" font-size="16" font-weight="600"><tspan fill="#83a598" class="bold">❯</tspan><tspan fill="#d3869b" xml:space="preserve"> ~/ </tspan><tspan>vim skills.json</tspan></text>
+  <text x="52" y="58" class="mono" fill="#928374" font-size="14" text-anchor="end">1</text>
+  <text x="60" y="58" class="mono" font-size="14"><tspan fill="#928374">{</tspan></text>
+  <text x="52" y="80" class="mono" fill="#928374" font-size="14" text-anchor="end">2</text>
+  <text x="70" y="80" class="mono" font-size="14"><tspan fill="#83a598" font-weight="600">"Languages"</tspan><tspan fill="#928374">: [</tspan><tspan fill="#b8bb26">"C", "C++", "Python", "Bash", "PHP", "JavaScript", "TypeScript"</tspan><tspan fill="#928374">],</tspan></text>
+  <text x="52" y="102" class="mono" fill="#928374" font-size="14" text-anchor="end">3</text>
+  <text x="70" y="102" class="mono" font-size="14"><tspan fill="#83a598" font-weight="600">"Frontend"</tspan><tspan fill="#928374">: [</tspan><tspan fill="#b8bb26">"React", "Next.js", "Tailwind CSS"</tspan><tspan fill="#928374">],</tspan></text>
+  <text x="52" y="124" class="mono" fill="#928374" font-size="14" text-anchor="end">4</text>
+  <text x="70" y="124" class="mono" font-size="14"><tspan fill="#83a598" font-weight="600">"Backend"</tspan><tspan fill="#928374">: [</tspan><tspan fill="#b8bb26">"Django", "FastAPI", "Node.js", "Nginx"</tspan><tspan fill="#928374">],</tspan></text>
+  <text x="52" y="146" class="mono" fill="#928374" font-size="14" text-anchor="end">5</text>
+  <text x="70" y="146" class="mono" font-size="14"><tspan fill="#83a598" font-weight="600">"Database"</tspan><tspan fill="#928374">: [</tspan><tspan fill="#b8bb26">"PostgreSQL", "MongoDB", "Redis"</tspan><tspan fill="#928374">],</tspan></text>
+  <text x="52" y="168" class="mono" fill="#928374" font-size="14" text-anchor="end">6</text>
+  <text x="70" y="168" class="mono" font-size="14"><tspan fill="#83a598" font-weight="600">"ML"</tspan><tspan fill="#928374">: [</tspan><tspan fill="#b8bb26">"PyTorch", "NumPy", "Matplotlib", "Scikit-learn", "Keras"</tspan><tspan fill="#928374">],</tspan></text>
+  <text x="52" y="190" class="mono" fill="#928374" font-size="14" text-anchor="end">7</text>
+  <text x="70" y="190" class="mono" font-size="14"><tspan fill="#83a598" font-weight="600">"Tools"</tspan><tspan fill="#928374">: [</tspan><tspan fill="#b8bb26">"Git", "Docker", "Kubernetes", "ArgoCD", "GCloud", "CI/CD", "Postman", "Figma"</tspan><tspan fill="#928374">],</tspan></text>
+  <text x="52" y="212" class="mono" fill="#928374" font-size="14" text-anchor="end">8</text>
+  <text x="60" y="212" class="mono" font-size="14"><tspan fill="#928374">}</tspan></text>
+  <text x="30" y="234" class="mono" fill="#83a598" font-size="14">~</text>
+  <text x="30" y="256" class="mono" fill="#83a598" font-size="14">~</text>
+  <rect x="0" y="266" width="900" height="20" fill="#3c3836" />
+  <text x="10" y="280" class="mono" fill="#ebdbb2" font-size="12">skills.json</text>
+  <text x="890" y="280" class="mono" fill="#928374" font-size="12" text-anchor="end">8L, 428B</text>
+  <text x="10" y="302" class="mono" fill="#ebdbb2" font-size="14">:wq</text>
   
-  <text x="30" y="337" class="mono" fill="#d3c6aa" font-size="16" font-weight="600"><tspan fill="#a7c080" class="bold">❯</tspan><tspan fill="#e67e80" xml:space="preserve"> ~/ </tspan><tspan>make coffee</tspan></text>
-  <text x="30" y="362" class="mono" fill="#e67e80" font-size="14">make: *** No rule to make target 'coffee'. Stop.</text>
+  <text x="30" y="337" class="mono" fill="#ebdbb2" font-size="16" font-weight="600"><tspan fill="#83a598" class="bold">❯</tspan><tspan fill="#d3869b" xml:space="preserve"> ~/ </tspan><tspan>make coffee</tspan></text>
+  <text x="30" y="362" class="mono" fill="#cc241d" font-size="14">make: *** No rule to make target 'coffee'. Stop.</text>
   
-  <text x="30" y="397" class="mono" fill="#d3c6aa" font-size="16" font-weight="600"><tspan fill="#a7c080" class="bold">❯</tspan><tspan fill="#e67e80" xml:space="preserve"> ~/ </tspan><tspan>gcc -Wall -Wextra -Werror snake.c</tspan></text>
+  <text x="30" y="397" class="mono" fill="#ebdbb2" font-size="16" font-weight="600"><tspan fill="#83a598" class="bold">❯</tspan><tspan fill="#d3869b" xml:space="preserve"> ~/ </tspan><tspan>gcc -Wall -Wextra -Werror snake.c</tspan></text>
 
-  <text x="30" y="432" class="mono" fill="#d3c6aa" font-size="16" font-weight="600"><tspan fill="#a7c080" class="bold">❯</tspan><tspan fill="#e67e80" xml:space="preserve"> ~/ </tspan><tspan>./a.out</tspan></text>
-  <path d="M 0.5 0 L 0.5 468 M 899.5 0 L 899.5 468" fill="none" stroke="#859289" stroke-opacity="0.3" stroke-width="1" />
+  <text x="30" y="432" class="mono" fill="#ebdbb2" font-size="16" font-weight="600"><tspan fill="#83a598" class="bold">❯</tspan><tspan fill="#d3869b" xml:space="preserve"> ~/ </tspan><tspan>./a.out</tspan></text>
+  <path d="M 0.5 0 L 0.5 468 M 899.5 0 L 899.5 468" fill="none" stroke="#928374" stroke-opacity="0.3" stroke-width="1" />
 </svg>
